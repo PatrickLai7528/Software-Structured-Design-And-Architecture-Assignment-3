@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.BorrowrecordEntity" table="borrowrecord" schema="librarydb">
+        <id name="rid">
+            <column name="rid" sql-type="int(11)"/>
+        </id>
+        <property name="uid">
+            <column name="uid" sql-type="int(11)"/>
+        </property>
+        <property name="bid">
+            <column name="bid" sql-type="int(11)"/>
+        </property>
+        <property name="borrowdate">
+            <column name="borrowdate" sql-type="date"/>
+        </property>
+        <property name="shouldreturndate">
+            <column name="shouldreturndate" sql-type="date"/>
+        </property>
+        <property name="returndate">
+            <column name="returndate" sql-type="date" />
+        </property>
+    </class>
+</hibernate-mapping>
