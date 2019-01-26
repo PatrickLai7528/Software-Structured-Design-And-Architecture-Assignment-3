@@ -24,7 +24,7 @@ public class FineRecordDaoImpl implements FineRecordDao {
         List<FinerecordEntity> records = query.getResultList();
 
         session.close();
-        ArrayList<FinerecordEntity> resultList = new ArrayList<FinerecordEntity>();
+        ArrayList<FinerecordEntity> resultList = new ArrayList<>();
         resultList.addAll(records);
 
         return resultList;

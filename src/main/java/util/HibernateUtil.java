@@ -66,6 +66,6 @@ public class HibernateUtil {
 //        ArrayList<BookEntity> bookEntities = user2.getBookList();
 //        BookEntity bookEntity = bookEntities.get(0);
 //        bookEntity.setDescription("");
-//        administrator.EditBookInfo(bookEntity);
+//        administrator.EditBookInfoServlet(bookEntity);
 //    }
 }

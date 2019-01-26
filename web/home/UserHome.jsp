@@ -62,12 +62,12 @@
     <li class="nav-item" style="margin: 8px;">
         <a
                 class="nav-link"
-                href="<%out.println(request.getContextPath()+"/BorrowRecord");%>">Check Borrow Record</a>
+                href="<%out.println(request.getContextPath()+"/BorrowRecordForUser");%>">Check Borrow Record</a>
     </li>
     <li class="nav-item" style="margin: 8px;">
         <a
                 class="nav-link"
-                href="<%out.println(request.getContextPath()+"/BorrowRecord");%>">Edit Profile</a>
+                href="<%out.println(request.getContextPath()+"/EditProfile");%>">Edit Profile</a>
     </li>
 </ul>
 <!-- 書本顯示區 -->

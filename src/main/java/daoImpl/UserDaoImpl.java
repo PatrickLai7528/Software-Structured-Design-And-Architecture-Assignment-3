@@ -1,7 +1,6 @@
 package daoImpl;
 
 import dao.UserDao;
-import logic.logicmodel.User;
 import model.UserEntity;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -50,10 +49,4 @@ public class UserDaoImpl implements UserDao{
 
         return user;
     }
-
-//    public static void main(String[] args){
-//        UserDaoImpl userDao = new UserDaoImpl();
-//        UserEntity userInfo = userDao.getUserInfoById(1);
-//        System.out.println(userInfo);
-//    }
 }

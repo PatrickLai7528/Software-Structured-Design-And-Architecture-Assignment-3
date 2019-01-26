@@ -31,7 +31,9 @@
             Message: <%out.println(resultMessage);%>
         </p>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="<%out.println(request.getContextPath()+"/BorrowRecord");%>"
+        <a class="btn btn-primary btn-lg" href="<%out.println(request.getContextPath() + "/index");%>">Go
+            Back</a>
+        <a class="btn btn-primary btn-lg" href="<%out.println(request.getContextPath()+"/BorrowRecordForUser");%>"
            role="button">Go to see
             my borrow
             record!</a>

@@ -31,10 +31,8 @@
             Message: <%out.println(resultMessage);%>
         </p>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="<%out.println(request.getContextPath()+"/BorrowRecord");%>"
-           role="button">Go to see
-            my Fine
-            record!</a>
+        <a class="btn btn-primary btn-lg" href="<%out.println(request.getContextPath()+"/index");%>"
+           role="button">Go Back</a>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

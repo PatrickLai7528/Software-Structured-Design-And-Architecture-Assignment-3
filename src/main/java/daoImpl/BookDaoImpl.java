@@ -42,7 +42,7 @@ public class BookDaoImpl implements BookDao {
         query.setParameter(1,type);
         List<BookEntity> bookList = query.getResultList();
         session.close();
-        ArrayList<BookEntity> resultList = new ArrayList<BookEntity>();
+        ArrayList<BookEntity> resultList = new ArrayList<>();
         resultList.addAll(bookList);
 
         return resultList;
@@ -54,7 +54,7 @@ public class BookDaoImpl implements BookDao {
         Query<BookEntity> query = session.createQuery("from BookEntity");
         List<BookEntity> bookList = query.getResultList();
         session.close();
-        ArrayList<BookEntity> resultList = new ArrayList<BookEntity>();
+        ArrayList<BookEntity> resultList = new ArrayList<>();
         resultList.addAll(bookList);
 
         return resultList;
@@ -62,7 +62,17 @@ public class BookDaoImpl implements BookDao {
 
     @Override
     public BookEntity getBookById(int bid) {
-        
-        return null;
+        Session session = HibernateUtil.getSession();
+        Query<BookEntity> query = session.createQuery("from BookEntity where bid=?1");
+        query.setParameter(1,bid);
+        List<BookEntity> books = query.getResultList();
+
+        BookEntity book = null;
+
+        if(!books.isEmpty()){
+            book = books.get(0);
+        }
+
+        return book;
     }
 }

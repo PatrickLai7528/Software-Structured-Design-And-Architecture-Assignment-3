@@ -45,7 +45,7 @@ public class EmailDaoImpl implements EmailDao {
         List<EmailEntity> emails = query.getResultList();
 
         session.close();
-        ArrayList<EmailEntity> resultList = new ArrayList<EmailEntity>();
+        ArrayList<EmailEntity> resultList = new ArrayList<>();
         resultList.addAll(emails);
 
         return resultList;

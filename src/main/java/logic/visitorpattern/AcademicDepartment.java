@@ -21,7 +21,6 @@ public class AcademicDepartment implements UserVisitor{
         ArrayList<BorrowrecordEntity> records = borrowRecordDao.getBorrowRecordById(userInfo.getUserid());
         User user = new User(userInfo);
         user.setBorrowRecords(records);
-
         return user;
     }
 }

@@ -172,10 +172,8 @@ public class User implements UserService {
 
     @Override
     public void updateUserInfo() {
-
         //调用visit方法
         visitor.visit(this.getUserInfo());
-
     }
 
 }

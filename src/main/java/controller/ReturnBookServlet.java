@@ -40,5 +40,6 @@ public class ReturnBookServlet extends HttpServlet {
         }
         session.setAttribute("resultMessage", message);
         session.setAttribute("returnedRecord", returnRecord);
+        request.getRequestDispatcher("/book/ReturnResult.jsp").forward(request, response);
     }
 }

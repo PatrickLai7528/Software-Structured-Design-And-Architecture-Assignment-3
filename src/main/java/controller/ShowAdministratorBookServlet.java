@@ -3,6 +3,7 @@ package controller;
 import logic.logicmodel.Administrator;
 import logic.logicmodel.User;
 import model.BookEntity;
+import model.EmailEntity;
 import util.BookImageUtils;
 
 import javax.servlet.ServletException;
@@ -21,9 +22,11 @@ public class ShowAdministratorBookServlet  extends HttpServlet {
         Administrator administrator = new Administrator(1); // now only have 1 admin
         List<BookEntity> bookList = administrator.getBookList();
         HttpSession session = request.getSession(true);
+        List<EmailEntity> emailList = administrator.getEmails();
         session.setAttribute("admin", administrator);
         session.setAttribute("bookList", bookList);
         session.setAttribute("randomBookCoverList", BookImageUtils.getBookImageListRandomly(bookList.size()));
+        session.setAttribute("emailList", emailList);
         request.getRequestDispatcher("/home/AdminHome.jsp").forward(request, response);
 
     }

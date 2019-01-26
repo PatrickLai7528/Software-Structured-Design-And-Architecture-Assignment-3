@@ -43,7 +43,7 @@ public class BorrowRecordDaoImpl implements BorrowRecordDao {
         query.setParameter(1,uid);
         List<BorrowrecordEntity> recordList = query.getResultList();
         session.close();
-        ArrayList<BorrowrecordEntity> resultList = new ArrayList<BorrowrecordEntity>();
+        ArrayList<BorrowrecordEntity> resultList = new ArrayList<>();
         resultList.addAll(recordList);
 
         return resultList;

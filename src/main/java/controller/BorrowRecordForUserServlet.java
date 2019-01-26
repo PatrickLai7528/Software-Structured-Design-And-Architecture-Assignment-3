@@ -14,8 +14,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/BorrowRecord")
-public class BorrowRecordServlet extends HttpServlet {
+@WebServlet("/BorrowRecordForUser")
+public class BorrowRecordForUserServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -33,6 +33,6 @@ public class BorrowRecordServlet extends HttpServlet {
         }
         System.out.println("NOT RETURN RECORD: " + borrowedRecordList);
         session.setAttribute("borrowedRecordList", borrowedRecordList);
-        request.getRequestDispatcher("/book/BorrowRecord.jsp").forward(request, response);
+        request.getRequestDispatcher("/record/BorrowRecordForUser.jsp").forward(request, response);
     }
 }
