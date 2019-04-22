@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="Software-Structured-Design-And-Architecture-Assignment-3:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/Software_Structured_Design_And_Architecture_Assignment_3_war</output-path>
+    <root id="archive" name="Software-Structured-Design-And-Architecture-Assignment-3_war.war">
+      <element id="artifact" artifact-name="Software-Structured-Design-And-Architecture-Assignment-3:war exploded" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+    </root>
+  </artifact>
+</component>
